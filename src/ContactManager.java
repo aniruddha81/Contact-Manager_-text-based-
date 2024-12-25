@@ -1,42 +1,10 @@
+package src;
+
 import java.io.*;
 import java.util.*;
 
-class Contact {
-    private String name;
-    private String number;
-    private String email;
-
-    public Contact(String name, String number, String email) {
-        this.name = name;
-        this.number = number;
-        this.email = email;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    @Override
-    public String toString() {
-        return name + "," + number + "," + email;
-    }
-}
-
 public class ContactManager {
     private static final String FILE_PATH = "data.txt";
-
-    public static void main(String[] args) {
-        ContactManager manager = new ContactManager();
-        manager.run();
-    }
 
     public void run() {
         Scanner scanner = new Scanner(System.in);
@@ -62,8 +30,7 @@ public class ContactManager {
                     scanner.close();
                     return;
                 }
-                default ->
-                    System.out.println("Invalid option. Please try again.");
+                default -> System.out.println("Invalid option. Please try again.");
             }
         }
     }
