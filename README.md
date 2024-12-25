@@ -34,7 +34,7 @@ A simple Java project that implements a Contact Manager using a text document as
 ## Project Structure
 
 ```
-ContactManager
+Contact-Manager_-text-based-
 ├── src
 │   ├── Main.java
 │   ├── Contact.java
